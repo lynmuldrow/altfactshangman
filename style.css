@@ -2,6 +2,27 @@ html, body {
 	margin: 0;
 	padding: 0;
 	background: url("") no-repeat; 
-	
-
 	}
+
+#topbar {
+	height: 50px;
+	margin: auto;
+	margin-top: 50px; 
+	color: #fff;
+	font-size: 36px; 
+	width: 800px; 
+	border-bottom: solid white 1px; 
+}
+
+#gameContent { 
+	margin: auto;
+	width: 800px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.spacer {
+	height: 30px;
+}
