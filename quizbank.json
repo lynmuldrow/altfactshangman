@@ -1,0 +1,30 @@
+// JSON question database- more questions can be added here in this format!
+
+{"wordlist":[
+	{
+		"word":"privilege",
+		"clue":"a special right, advantage, or immunity granted or available only to a particular person or group of people"
+	},
+
+	{
+		"word":"hanging"
+		"clue":"the practice of hanging condemned people as a form of capital punishment"
+	},
+
+	{
+		"word":"impeach"
+		"clue":"what we should do to Drumpf"
+	},
+
+	{
+		"word":"racism"
+		"clue":"prejudice, discrimination, or antagonism directed against someone of a different race based on the belief that one's own race is superior"
+	},
+
+
+	{
+		"word":"trigger"
+		"clue":"to cause (an event, situation, or memory) to happen or exist"
+	}
+	]
+}
