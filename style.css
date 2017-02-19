@@ -1,28 +1,115 @@
+/* Main Styling */
 html, body { 
 	margin: 0;
 	padding: 0;
-	background: url("") no-repeat; 
+	background-color: #000;
 	}
 
+/* Navbar Section- created a topbar to link to alternative version of the game */
 #topbar {
 	height: 50px;
 	margin: auto;
 	margin-top: 50px; 
 	color: #fff;
-	font-size: 36px; 
+	font-size: 15px; 
+	font-weight: 100;
 	width: 800px; 
 	border-bottom: solid white 1px; 
+	text-transform: uppercase;
+	text-align: left;
 }
 
+#topbarright {
+	height: 50px;
+	margin: auto; 
+	color: #fff;
+	font-size: 15px; 
+	font-weight: 100;
+	width: 800px; 
+	text-transform: uppercase;
+	text-align: right;
+}
+
+/* Styling for the game area */
 #gameContent { 
 	margin: auto;
 	width: 800px;
 	height: 400px;
 	position: relative;
 	overflow: hidden;
-	background-color: #000;
+	background: url("images/tree.jpg") no-repeat; 
 }
 
 .spacer {
 	height: 30px;
+}
+
+#gameTitle { 
+	margin-top: 100px;
+	text-align: center;
+	font-size: 40px;
+	color: #fff; 
+}
+
+#replay {
+	margin-left: 0px; 
+}
+
+#world-holder { 
+	margin-top: 50px;
+	margin-left: 150px;
+
+}
+
+#clueHolder {
+	margin-top: 130px;
+	margin-left: 150px;
+}
+
+#guesses { 
+	margin-top: 20px;
+	margin-left: 150px;
+}
+
+#pixHolder {
+	margin-left: 30px; 
+	width: 85px; 
+	float: left;
+	overflow: hidden;
+}
+
+#pixHolder img { 
+	position: relative;
+}
+
+#feedback {
+margin-top: 20px;
+margin-left: 150px; 
+font-size: 34px;
+color: #fff; 
+}
+
+.tile { 
+height: 40px;
+width: 40px;
+float: left;
+margin-right: 10px;
+background-color: white;
+text-align: center;
+font-size: 24px;
+color: #333;
+padding-top: 5px;
+}
+
+#finalMessage {
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	width: 90%;
+	margin: auto;
+	margin-top: 100px;
+}
+
+#dummy {
+	position: absolute;
 }
