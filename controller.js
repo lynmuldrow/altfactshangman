@@ -45,6 +45,8 @@ function gameScreen(){
 	$('#gameWrapper').append('<div id="feedback"></div>');
 	$('#gameWrapper').append('<form><input type="text" id="dummy" ></form>');
 
+
+
 // Next, let's call a random word, and build tiles based on the length of letters. Stick the wrong letters in an array (that we'll show as previous guesses) We'll offer a clue, 
 	getWord();
 	var numberOfTiles=currentWord.length;
@@ -60,17 +62,21 @@ function gameScreen(){
 	$(document).on("keyup",handleKeyUp);
 	$(document).on("click",function(){$('#dummy').focus();});
 	$('#dummy').focus();
-}//gamescreen
+}
 			
-			
+
+// We have to write the function that defines how we get a random word and clue- using math.random .			
 function getWord(){
 	var rnd=Math.floor(Math.random()*questionBank.length);
 	currentWord=questionBank[rnd][0];
 	currentClue=questionBank[rnd][1];
 	questionBank.splice(rnd,1); 
 	wordArray=currentWord.split("");			
-}//getword
-			
+}
+
+
+
+// And the function that handles the listener. It takes the guesses  and pushes them into the word array/tiles if true. If not, they go in the previous guesses array.
 function handleKeyUp(event) {
 	if(event.keyCode>64 && event.keyCode<91){
 		var found=false;
@@ -86,15 +92,17 @@ function handleKeyUp(event) {
 				
 				if(input==wordArray[i]){found=true;$('#t'+i).append(input);}	
 				
-			}//for
+			}
 				
 			if(found){checkAnswer();}
 			else{wrongAnswer(input);}
-		}//if
-	}//if
-}//handlekeyup
+		}
+	}
+}
 	
-		
+
+	
+// Now to check for the right answer. If the player guesses, they win! Send a victory message.
 function checkAnswer(){
 	var currentAnswer="";	
 	for(i=0;i<currentWord.length;i++){
@@ -103,8 +111,11 @@ function checkAnswer(){
 	if(currentAnswer==currentWord){
 		victoryMessage();
 	};
-}//checkanswer
-		
+}
+
+
+	
+// If the player gets the answer wrong after 6 guesses, they lose. Send the defeat message. 
 function wrongAnswer(a){
 	wrongAnswerCount++;
 	var pos=(wrongAnswerCount*-75) +"px"
@@ -112,27 +123,33 @@ function wrongAnswer(a){
 	$('#hangman').css("left",pos);
 	if(wrongAnswerCount==6){
 		defeatMessage();}
-}//wronganswer
-		
+}
+
+
+
+// And here we write out the function for the victory message, including an onclick function to go to the next game, or end as they've guessed all the words. 
 function victoryMessage(){
 	$(document).off("keyup", handleKeyUp);
-	$('#feedback').append("CORRECT!<br><br><div id='replay' class='button'>Kill Again?</div>");
+	$('#feedback').append("You win- the girl will be spared based on your actions. Think about who is in control of your life- for victims of brutality, it's in the hands of their executioner.<br><br><div id='replay' class='button'>Kill Again?</div>");
 	$('#replay').on("click",function (){
 		if(questionBank.length>0){
 			gameScreen()}
 		else{finalPage()}
 	});
-}//victory
-		
+}
+
+
+// Same thing, but if they lose, the player gets a harsh lesson. :/ 
 function defeatMessage(){
 	$(document).off("keyup", handleKeyUp);
-	$('#feedback').append("You've killed a child, based on your actions.<br>( The correct answer was "+ currentWord +". "+")<div id='replay' class='button'>Kill Again?</div>");
+	$('#feedback').append("You've killed a child, based on your actions. Try again to save her life.<br>( The correct answer was "+ currentWord +". "+")<div id='replay' class='button'>Kill Again?</div>");
 	$('#replay').on("click",function (){
 		if(questionBank.length>0){
 			gameScreen()}
 		else{finalPage()}
 	});
-}//defeat
+}
+
 
 function finalPage(){
 	$('#gameWrapper').empty();

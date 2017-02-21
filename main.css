@@ -1,3 +1,19 @@
+
+/* --------------------------------------------------------------*/                                                             
+/*                Alt Facts/ True Facts Hangman                  */
+/*                       By Lyn Muldrow                          */
+/*                   http://lynmuldrow.com                       */
+/*                                                               */
+/*     This project was created to teach and illuminate          */
+/*     the effect of 'traditional' games on the psyche of the    */
+/*     marginalized or oppressed. Open source and free to use,   */
+/*     but please credit me if you intend to use commercially.   */
+/*                                                               */
+/* --------------------------------------------------------------*/
+
+
+
+/* General Styling */
 html, body {
 	margin: 0;
 	padding: 0;
@@ -36,7 +52,7 @@ html, body {
 	 margin:auto;
 	 margin-top:50px;
 	 width:700px;
-	 height:350px;
+	 height:320px;
 	 position:relative;
 	 overflow:hidden;
 	 font-size: 15px;
@@ -64,6 +80,7 @@ html, body {
 
 
 
+/* Game Wrapper Styling */
 
 #gameTitle{
  	margin-top:100px;
@@ -175,6 +192,9 @@ html, body {
  left:-200px;
  top:0px;
 }
+
+
+/* Mobile Styling- breakpoints and such*/
  
 @media screen and (max-width:800px) {
  #topbar{
