@@ -43,7 +43,7 @@ function gameScreen(){
 	$('#gameWrapper').append('<div id="clueHolder"></div>');
 	$('#gameWrapper').append('<div id="guesses">Previous guesses:</div>');
 	$('#gameWrapper').append('<div id="feedback"></div>');
-	$('#gameWrapper').append('<form><input type="text" id="dummy" ></form>');
+	
 
 
 
@@ -60,8 +60,7 @@ function gameScreen(){
 	$('#clueHolder').append("HINT: "+currentClue);
  
 	$(document).on("keyup",handleKeyUp);
-	$(document).on("click",function(){$('#dummy').focus();});
-	$('#dummy').focus();
+	
 }
 			
 
@@ -113,7 +112,6 @@ function checkAnswer(){
 	};
 }
 
-
 	
 // If the player gets the answer wrong after 6 guesses, they lose. Send the defeat message. 
 function wrongAnswer(a){
@@ -150,10 +148,9 @@ function defeatMessage(){
 	});
 }
 
-
 function finalPage(){
 	$('#gameWrapper').empty();
 	$('#gameWrapper').append('<div id="finalMessage">You have finished all the words in the game- take a moment to reflect on this game and how you felt while playing.</div>');
-}//finalpage
+}
 	
 	});// Our game has finished loading- don't forget these closing brackets! 

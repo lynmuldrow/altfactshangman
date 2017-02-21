@@ -191,11 +191,7 @@ html, body {
  margin-top:100px;
 }
  
-#dummy{
- position:absolute;
- left:-200px;
- top:0px;
-}
+
 
 
 /* Mobile Styling- breakpoints and such*/

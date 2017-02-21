@@ -43,7 +43,7 @@ function gameScreen(){
 	$('#gameWrapper').append('<div id="clueHolder"></div>');
 	$('#gameWrapper').append('<div id="guesses">Previous guesses:</div>');
 	$('#gameWrapper').append('<div id="feedback"></div>');
-	$('#gameWrapper').append('<form><input type="text" id="dummy" ></form>');
+	
 
 
 // Next, let's call a random word, and build tiles based on the length of letters. Stick the wrong letters in an array (that we'll show as previous guesses) We'll offer a clue, 
@@ -59,8 +59,7 @@ function gameScreen(){
 	$('#clueHolder').append("HINT: "+currentClue);
  
 	$(document).on("keyup",handleKeyUp);
-	$(document).on("click",function(){$('#dummy').focus();});
-	$('#dummy').focus();
+	
 }
 			
 // We have to write the function that defines how we get a random word and clue- using math.random .
@@ -122,7 +121,7 @@ function wrongAnswer(a){
 // And the defeat message stings. Code is poetry. Code is power. Code is art. 
 function defeatMessage(){
 	$(document).off("keyup", handleKeyUp);
-	$('#feedback').append("It doesn't matter if you got the right answer- in this society, this child is assumed guilty, as was Trayvon Martin and Tamir Rice. She'll be executed anyway. <br>( The correct answer was "+ currentWord +". "+")<div id='replay' class='button'>Kill Again?</div>");
+	$('#feedback').append("It doesn't matter if you got the right answer- in this society, this black child is assumed guilty, as was Trayvon Martin and Tamir Rice. She'll be executed anyway. <br>( The correct answer was "+ currentWord +". "+")<div id='replay' class='button'>Kill Again?</div>");
 	$('#replay').on("click",function (){
 		if(questionBank.length>0){
 			gameScreen()}
