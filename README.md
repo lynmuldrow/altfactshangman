@@ -27,9 +27,9 @@ Why would anyone create a game in the first place that trivializes death? Why ma
 
 ## What's next? 
 
-This was built within a few days under tight time constraints. If given more time I'd love to add Bootstrap or another CSS framework with SASS to extend the UI. I'd add some gradients and moving elements to fit web trends. I'd also add more media queries and breakpoints to ensure mobile compatibility on all devices. Right now there's a fix, added as a comment to implement at a later time. Finally, I'd love to implement a more robust question bank with other topical words to guess. 
+This was built within a few days under tight time constraints. If given more time I'd love to add Bootstrap or another CSS framework with SASS to extend the UI. I'd add some gradients and moving elements to fit web trends and extend the experience. I'd also add more media queries and breakpoints to ensure mobile compatibility on all devices. Right now there's a fix for mobile, added as a comment to implement at a later time. Finally, I'd love to add a more robust question bank with other topical words to guess. 
 
-This was written with a TON of comments in order to be used as curriculum for any nonprofit organization teaching people of color or women to code. Please, use this as a project, have students extend it, etc.
+This was written with a TON of comments in order to be used as curriculum for any nonprofit organization teaching people of color or women to code. Please use this as a project, have students extend it, etc.
 
 
 
