@@ -1,0 +1,281 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color:#fff;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+
+#topbar{
+	 height:50px;
+	 margin:auto;
+	 margin-top:50px;
+	 color:#888;
+	 font-size:10px;
+	 font-weight: 100;
+	 text-transform: uppercase;
+	 width:800px;
+	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	 border-bottom:solid black 1px;
+}
+
+#footer{
+	 height:50px;
+	 margin:auto;
+	 margin-top:30px;
+	 color:#888;
+	 font-size:10px;
+	 font-weight: 100;
+	 text-transform: uppercase;
+	 width:800px;
+	 border-top:solid black 1px;
+}
+
+
+#gameWrapper{
+	 margin:auto;
+	 margin-top:50px;
+	 width:700px;
+	 height:350px;
+	 position:relative;
+	 overflow:hidden;
+	 font-size: 15px;
+	 font-weight: 100;
+	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	 color: #fff;
+	 background-color:#333;
+	 text-align: left;
+	 opacity: 0.9;
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+#gameContent{
+	 margin:auto;	
+	 width:800px;
+	 height:400px;
+	 position:relative;
+	 overflow:hidden;
+	 background: url('images/tree.jpg');
+
+}
+
+.spacer{height:30px;}
+
+
+
+
+#gameTitle{
+ 	margin-top:100px;
+ 	text-align:center;
+ 	font-size:20px;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	color:#fff;}
+
+.button{
+	font-size:10px;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	width:100px;
+ 	margin:auto;
+ 	margin-top:20px;
+ 	margin-bottom: 20px;
+ 	padding: 10px;
+ 	cursor:pointer;
+ 	border:solid 1px white;
+ 	border-radius:4px;
+ 	text-align:center;
+ 	color:#fff;}
+
+.button:hover{
+ 	background-color:#999;}
+
+#replay{
+ margin-left:0px;}
+
+ /*Extension: Fancy Button! 
+
+ #fancyButton {
+	color: #999;
+
+	background-color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+	animation: tuv 3s infinite alternate;
+}
+@keyframes tuv {
+	100% {
+	  background-color: black;
+  }
+}
+*/
+ 
+
+#wordHolder{
+ margin-top:50px;
+ margin-left:150px;
+}
+ 
+#clueHolder{
+ margin-top:130px;
+ margin-left:150px;
+ padding-right: 50px;
+}
+ 
+#guesses{
+ margin-top:20px;
+ margin-left:150px;
+}
+ 
+#pixHolder{
+ margin-left:30px;
+ width:85px;
+ float:left;
+ overflow:hidden;
+}
+ 
+#pixHolder img{
+ position:relative;}
+ 
+#feedback{
+ margin-top:20px;
+ margin-left:150px;
+ font-size:15px;
+ color:#fff;
+}
+ 
+.tile{
+ height:40px;
+ width:40px;
+ float:left;
+ margin-right:10px;
+ background-color:#888;
+ text-align:center;
+ font-size:24px;
+ color:#333;
+ padding-top:5px;
+}
+ 
+#finalMessage{
+ text-align:center;
+ font-size:15px;
+ font-weight: 100;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ color:#fff;
+ font-weight:100;
+ width:90%;
+ margin:auto;
+ margin-top:100px;
+}
+ 
+#dummy{
+ position:absolute;
+ left:-200px;
+ top:0px;
+}
+ 
+@media screen and (max-width:800px) {
+ #topbar{
+	 margin-left:1%;
+	 margin-right:1%;	
+	 width:96%;
+ }
+ #gameContent{
+	 margin:1%;	
+	 width:98%;
+ }
+
+ #gameWrapper{
+	 margin:1%;	
+	 width:98%;
+ }
+
+ .tile{
+	 height:20px;
+	 width:20px;
+	 font-size:14px;
+ }
+}
+ 
+@media screen and (max-width:560px) {
+ #gameWrapper{
+	 height: 390px;
+ }
+ #wordHolder{
+	 margin-top:10px;
+	 margin-left:10px;
+ }
+ #clueHolder{
+	 margin-top:130px;
+	 margin-left:85px;
+ }
+ #guesses{
+	 margin-top:20px;
+	 margin-left:85px;
+ }
+ #pixHolder{
+	 margin-top:50px;
+	 margin-left:10px;
+	 position:absolute;
+ }
+ #feedback{
+	 margin-left:85px;
+	 font-size:28px;
+ }
+ #finalMessage{
+	 font-size:20px;
+ }
+}
+
+/*Fix for Mobile- at mobile resolutions currently the tiles migrate too far left. Here I've centered the tiles and resized game content to be appropriate for small screen viewing.*/
+/* @media screen and (max-width:560px) {
+ #gameWrapper{
+	 height: 390px;
+ }
+  #wordHolder{
+	 text-align:center;
+	 margin-left:85px;
+ 
+ #clueHolder{
+	 margin-top:130px;
+	 margin-left:85px;
+ }
+ #guesses{
+	 margin-top:20px;
+	 margin-left:85px;
+ }
+ #pixHolder{
+	 margin-top:50px;
+	 margin-left:10px;
+	 position:absolute;
+ }
+ #feedback{
+	 margin-left:85px;
+	 font-size:28px;
+ }
+ #finalMessage{
+	 font-size:30px;
+ }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
