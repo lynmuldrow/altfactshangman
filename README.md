@@ -3,7 +3,7 @@ Alternative Facts Hangman / #TrueFacts Hangman
 
 # Make Hangman great again! 
 
-Hangman is an offensive, triggering game making light of a punishment given to most of my ancestors for the color of their skin and nothing more.
+Hangman is an offensive, triggering game making light of a punishment given to my ancestors for the color of their skin and nothing more.
 
 
 ## How to play Alternative Facts Hangman

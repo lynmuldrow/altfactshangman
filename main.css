@@ -50,9 +50,9 @@ html, body {
 
 #gameWrapper{
 	 margin:auto;
-	 margin-top:50px;
+	 margin-top:30px;
 	 width:700px;
-	 height:320px;
+	 height:350px;
 	 position:relative;
 	 overflow:hidden;
 	 font-size: 15px;
