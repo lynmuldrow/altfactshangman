@@ -47,6 +47,12 @@ html, body {
 	 border-top:solid black 1px;
 }
 
+.directions{
+	text-align:center;
+	font-size:15px;
+	padding:10px;
+}
+
 
 #gameWrapper{
 	 margin:auto;

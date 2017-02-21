@@ -6,7 +6,7 @@ Alternative Facts Hangman / #TrueFacts Hangman
 Hangman is an offensive, triggering game making light of a punishment given to black ancestry for the color of their skin and nothing more.
 
 Play here: [Alternative Facts Hangman](https://altfactshangman.bitballoon.com)
-Clone or download to implement locally, opening the index file in your browser.
+*Clone or download to implement locally, opening the index file in your browser.
 
 
 ## How to play Alternative Facts Hangman
